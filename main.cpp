@@ -89,9 +89,7 @@ int main()
                                         {
                                             number1 = number1 * 10;
                                             number1 -= vectornums[i];
-                                        }
-                                        std::cout << number1 << std::endl; 
-                                        std::cout << number2 << std::endl;                                      
+                                        }                                  
                                     }
                                 }
                             }
@@ -108,9 +106,7 @@ int main()
                                 else
                                 {
                                     minus1 = true;
-                                }
-                                std::cout << number1 << std::endl; 
-                                std::cout << number2 << std::endl;   
+                                }  
                             }
                         }
                         if ((pos.x > 300 && pos.x < 400 && pos.y < 600 && pos.y > 200))
@@ -121,7 +117,6 @@ int main()
                                     {
                                         if (pos.y < vectorthingsY[i] + 100 && pos.y > vectorthingsY[i])
                                         {
-                                            std::cout << vectorthings[i];
                                             operation = vectorthings[i];
                                             stage ++;
                                         }
@@ -161,9 +156,7 @@ int main()
                                         {
                                             number2 = number2 * 10;
                                             number2 -= vectornums[i];
-                                        }
-                                        std::cout << number1 << std::endl; 
-                                        std::cout << number2 << std::endl;                                        
+                                        }                                        
                                     }
                                 }
                             }
@@ -180,9 +173,7 @@ int main()
                                 else
                                 {
                                     minus2 = true;
-                                }
-                                std::cout << number1 << std::endl; 
-                                std::cout << number2 << std::endl;   
+                                }   
                             }
                         }
                         if (pos.x < vectorthingsX[2] + 100 && pos.x > vectorthingsX[2])
@@ -193,7 +184,6 @@ int main()
                                 if (operation == "-") result = number1 - number2;
                                 if (operation == "x") result = number1 * number2;
                                 if (operation == "/") result = number1 / number2;
-                                std::cout << result << std::endl;
                                 number1 = result;
                                 number2 = 0;
                                 stage--;
